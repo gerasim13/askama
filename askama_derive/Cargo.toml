@@ -7,7 +7,7 @@ repository = "https://github.com/askama-rs/askama"
 license = "MIT OR Apache-2.0"
 readme = "README.md"
 edition = "2021"
-rust-version = "1.83"
+rust-version = "1.85"
 
 [package.metadata.docs.rs]
 all-features = true
@@ -19,7 +19,7 @@ proc-macro = true
 [dependencies]
 parser = { package = "askama_parser", version = "=0.14.0", path = "../askama_parser" }
 
-toml = { version = "1.1.8", optional = true, default-features = false, features = ["parse", "serde"] }
+toml = { version = "1.1.7", optional = true, default-features = false, features = ["parse", "serde"] }
 pulldown-cmark = { version = "0.13.0", optional = true, default-features = false }
 serde = { version = "1.0", optional = true }
 serde_derive = { version = "1.0", optional = true }
